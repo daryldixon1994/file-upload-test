@@ -17,9 +17,6 @@ conn.once("open", function () {
 
 app.use("/file", upload);
 
-app.use((req, res) => {
-  res.send("API IS RUNNIG");
-});
 // media routes
 app.get("/file/:filename", async (req, res) => {
   try {
